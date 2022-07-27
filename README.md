@@ -36,7 +36,7 @@ var newResource = new BicepResource("myStorageAccount",
     });
 ```
 
-and generate bicep like this...
+and generate bicep using the ToBicepString() method to output this...
 
 ```
 resource myStorageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
