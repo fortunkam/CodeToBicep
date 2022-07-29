@@ -1,4 +1,4 @@
-name: .NET
+name: Build and Test CodeToBicep
 
 on:
   push:
