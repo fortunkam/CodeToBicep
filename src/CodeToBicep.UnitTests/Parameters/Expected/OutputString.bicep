@@ -1,0 +1,1 @@
+﻿output MyOutputValue string = some.reference.value
