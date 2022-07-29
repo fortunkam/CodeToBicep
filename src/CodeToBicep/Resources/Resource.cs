@@ -5,7 +5,7 @@ namespace Memoryleek.CodeToBicep.Resources;
 
 public class Resource : BaseResource
 {
-    private readonly Dictionary<string, BaseValue> _properties;
+    private readonly Dictionary<string, BaseValue>? _properties;
 
     public Resource(string bicepName, 
                         string resourceType, 

@@ -11,9 +11,5 @@
     <Compile Remove="Parameter1.cs" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Azure.Bicep.Core" Version="0.8.9" />
-  </ItemGroup>
-
 </Project>
 
