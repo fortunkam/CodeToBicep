@@ -7,7 +7,7 @@ namespace Memoryleek.CodeToBicep.UnitTests.Resources;
 public class ResourceTests
 {
     [Theory]
-    [RawFileData(@"Resources\Expected\ResourceSimple.bicep")]
+    [RawFileData(@"Resources/Expected/ResourceSimple.bicep")]
     public void ResourceSimpleOutputsBicep(string expected)
     {
         var resource1 = new Resource("myresource",
@@ -20,7 +20,7 @@ public class ResourceTests
     }
 
     [Theory]
-    [RawFileData(@"Resources\Expected\ResourceWithScope.bicep")]
+    [RawFileData(@"Resources/Expected/ResourceWithScope.bicep")]
     public void ResourceWithScopeOutputsBicep(string expected)
     {
         var resource1 = new Resource("myresource",
@@ -33,7 +33,7 @@ public class ResourceTests
     }
 
     [Theory]
-    [RawFileData(@"Resources\Expected\ResourceWithLocation.bicep")]
+    [RawFileData(@"Resources/Expected/ResourceWithLocation.bicep")]
     public void ResourceWithLocationOutputsBicep(string expected)
     {
         var resource1 = new Resource("myresource",
@@ -49,7 +49,7 @@ public class ResourceTests
     }
 
     [Theory]
-    [RawFileData(@"Resources\Expected\ResourceWithTags.bicep")]
+    [RawFileData(@"Resources/Expected/ResourceWithTags.bicep")]
     public void ResourceWithTagsOutputsBicep(string expected)
     {
         var resource1 = new Resource("myresource",
@@ -69,7 +69,7 @@ public class ResourceTests
     }
 
     [Theory]
-    [RawFileData(@"Resources\Expected\ResourceWithNestedProperties.bicep")]
+    [RawFileData(@"Resources/Expected/ResourceWithNestedProperties.bicep")]
     public void ResourceWithNestedPropertiesOutputsBicep(string expected)
     {
         var resource1 = new Resource("myresource",

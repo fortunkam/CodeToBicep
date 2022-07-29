@@ -6,7 +6,7 @@ namespace Memoryleek.CodeToBicep.UnitTests.Values;
 
 public class DictionaryValueTests
 {
-    [RawFileData(@"Values\Expected\DictionaryValue.bfragment")]
+    [RawFileData(@"Values/Expected/DictionaryValue.bfragment")]
     [Theory]
     public void ToBicepStringOutputsValueSingleLevel(string expected)
     {

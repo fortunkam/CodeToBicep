@@ -8,7 +8,7 @@ namespace Memoryleek.CodeToBicep.UnitTests.Parameters;
 public class InputParametersTests
 {
     [Theory]
-    [RawFileData(@"Parameters\Expected\InputString_NoDefault.bicep")]
+    [RawFileData(@"Parameters/Expected/InputString_NoDefault.bicep")]
     public void InputParameterStringWithNoDefault(string expected)
     {
         var param1 = new InputParameter("MyParamName",
@@ -20,7 +20,7 @@ public class InputParametersTests
     }
 
     [Theory]
-    [RawFileData(@"Parameters\Expected\InputString_Default.bicep")]
+    [RawFileData(@"Parameters/Expected/InputString_Default.bicep")]
     public void InputParameterStringWithDefault(string expected)
     {
         var param1 = new InputParameter("MyParamName",
@@ -32,7 +32,7 @@ public class InputParametersTests
     }
 
     [Theory]
-    [RawFileData(@"Parameters\Expected\InputString_Decorators.bicep")]
+    [RawFileData(@"Parameters/Expected/InputString_Decorators.bicep")]
     public void InputParameterStringWithDecorators(string expected)
     {
         var param1 = new InputParameter("MyParamName",

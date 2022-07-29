@@ -8,7 +8,7 @@ namespace Memoryleek.CodeToBicep.UnitTests.Resources;
 public class ResourceReferenceTests
 {
     [Theory]
-    [RawFileData(@"Resources\Expected\ExistingResourceWithScope.bicep")]
+    [RawFileData(@"Resources/Expected/ExistingResourceWithScope.bicep")]
     public void ResourceReferenceWithScopeOutputsBicep(string expected)
     {
         var resource1 = new ResourceReference("myresource",
@@ -21,7 +21,7 @@ public class ResourceReferenceTests
     }
 
     [Theory]
-    [RawFileData(@"Resources\Expected\ExistingResourceWithoutScope.bicep")]
+    [RawFileData(@"Resources/Expected/ExistingResourceWithoutScope.bicep")]
     public void ResourceReferenceWithoutScopeOutputsBicep(string expected)
     {
         var resource1 = new ResourceReference("myresource",
